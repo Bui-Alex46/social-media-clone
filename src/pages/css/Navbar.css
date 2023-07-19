@@ -1,0 +1,38 @@
+/* CSS for the navigation bar */
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px;
+  }
+  
+  .navbar li {
+    margin-bottom: 10px;
+  }
+  
+  .navbar li a {
+    display: block;
+    padding: 10px;
+    color: #14171a;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .navbar li a:hover {
+    background-color: #e8f5fe;
+    border-radius: 5px;
+  }
+  
+  .navbar li.active a {
+    color: #1da1f2;
+  }
+  

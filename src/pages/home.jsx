@@ -2,6 +2,7 @@ import React, {useRef} from "react";
 import {firestore } from "../firebase"
 import {addDoc, collection} from "firebase/firestore"
 
+
 const Home = () => {
     const messageRef = useRef();
     const ref = collection(firestore, "messages");
@@ -21,12 +22,7 @@ const Home = () => {
     }
     return (
         <div>
-           
-            <form onSubmit = {handleSubmit}>
-                <label> Enter Message</label>
-                <input type = "text" ref = {messageRef} />
-                <button type = "submit"> Submit </button>
-            </form>
+            <h1> home </h1>
         </div>
     )
 }
