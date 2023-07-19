@@ -1,7 +1,7 @@
 import React, {useRef} from "react";
 import {firestore } from "../firebase"
 import {addDoc, collection} from "firebase/firestore"
-
+import './css/Home.css'
 
 const Home = () => {
     const messageRef = useRef();
@@ -21,7 +21,7 @@ const Home = () => {
         }
     }
     return (
-        <div>
+        <div className="Home-container">
             <h1> home </h1>
         </div>
     )
