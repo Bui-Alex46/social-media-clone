@@ -2,6 +2,7 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import {getAuth, setPersistence, browserSessionPersistence} from "firebase/auth";
+import {getStorage} from "firebase/storage";
 
 
 const firebaseConfig = {
@@ -17,19 +18,4 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 export const firestore = getFirestore(app);
 export const auth = getAuth(app)
-
-
-// const provider = new GoogleAuthProvider();
-
-// export const signInWithGoogle = () => {
-//   signInWithPopup(auth, provider).then((result) => {
-
-//   const name = result.user.displayName
-//   const email = result.user.email
-//   localStorage.setItem("name", name)
-//   localStorage.setItem("email", email)
-
-// }).catch((error) => {
-//   console.log(error)
-// })
-// }
+export const storage = getStorage(app)

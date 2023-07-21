@@ -5,8 +5,7 @@ import { useNavigate } from 'react-router-dom';
 const SignOutPage = () => {
     const navigate = useNavigate()
     const [isSignedIn, setIsSignedIn] = useState(true);
-
-
+    
     const handleSignOut = () => {
         signOut(auth).then(() => {
             setIsSignedIn(false)
@@ -17,7 +16,10 @@ const SignOutPage = () => {
         })
     }
     return (
-        <div className = 'auth-container'> <button type = "button" onClick = {handleSignOut}> logout </button> </div>
+        
+        <div className = 'auth-container'> 
+        <button type = "button" onClick = {handleSignOut}> logout </button> 
+        </div>
     )
 }
 

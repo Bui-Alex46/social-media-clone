@@ -41,7 +41,7 @@ const Authentication = () => {
     
     return( 
     <div className='auth-container'>
-       {isSignedIn === true? (
+       {isSignedIn === false? (
         <SignOutPage/>
        ) : (<SignInPage />)}
         
