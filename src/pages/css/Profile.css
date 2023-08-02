@@ -20,9 +20,9 @@
     margin: 0;
     padding: 0;
     position:relative;
-    top: 3rem;
-    right: 15rem;
-    font-size: 24px;
+    top: 2.8rem;
+    right: 15.5rem;
+    font-size: 21px;
 
 }
 .profile-pic{
@@ -50,8 +50,8 @@
     margin: 0;
     padding: 0;
     position:relative;
-    top: 3rem;
-    right: 13.6rem;
+    top: 2.8rem;
+    right: 13.7rem;
     font-size: 15px;
     font-weight: lighter;
 }
