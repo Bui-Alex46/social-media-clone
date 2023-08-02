@@ -3,7 +3,7 @@
     position: fixed;
     left: 0;
     top: 0;
-    width: 250px;
+    width: 256px;
     height: 100vh;
     background-color: #fff;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
@@ -13,6 +13,7 @@
     list-style-type: none;
     padding: 0;
     margin: 20px;
+    margin-left: 50px;
   }
   
   .navbar li {
@@ -23,7 +24,8 @@
     display: block;
     padding: 10px;
     color: #14171a;
-    font-weight: bold;
+    font-weight: light;
+    font-size: 20px;
     text-decoration: none;
   }
   
