@@ -3,10 +3,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: left;
-    background-color: rgb(227, 224, 224);
-    width: 70%;
+    top: 3.5rem;
+    background-color: rgb(199, 211, 224);
+    width: 32%;
+    height: 20%;
     position:absolute;
-    left: 16rem;
+    left: 37.2rem;
+    
+    
 }
 .username{
     display: flex;
@@ -16,8 +20,8 @@
     margin: 0;
     padding: 0;
     position:relative;
-    top: 8rem;
-    right: 36rem;
+    top: 3rem;
+    right: 15rem;
     font-size: 24px;
 
 }
@@ -28,12 +32,12 @@
     margin: 0;
     padding: 0;
     border-radius: 50%;
-    width: 140px;
-    height: 140px;
+    width: 125px;
+    height: 125px;
     box-shadow:rgba(0, 0, 0, 0.03) 0px 0px 2px inset;
     position: relative;
-    right: 35rem;
-    top: 7rem;
+    right: 14rem;
+    top: 1.8rem;
     border: 2px solid #000000;
     outline-style: none;
 
@@ -46,8 +50,8 @@
     margin: 0;
     padding: 0;
     position:relative;
-    top: 8rem;
-    right: 34.5rem;
+    top: 3rem;
+    right: 13.6rem;
     font-size: 15px;
     font-weight: lighter;
 }
