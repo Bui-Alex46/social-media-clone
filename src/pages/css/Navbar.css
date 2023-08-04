@@ -30,8 +30,9 @@
   }
   
   .navbar li a:hover {
-    background-color: #e8f5fe;
-    border-radius: 5px;
+    background-color: #bcbfc1;
+    border-radius: 30px;
+  
   }
   
   .navbar li.active a {

@@ -1,4 +1,4 @@
-import React, {useRef} from "react";
+import React from "react";
 import {firestore } from "../firebase"
 import {addDoc, collection} from "firebase/firestore"
 import './css/Home.css'
