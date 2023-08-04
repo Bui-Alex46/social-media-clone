@@ -55,3 +55,12 @@
     font-size: 15px;
     font-weight: lighter;
 }
+.header-name{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -4rem;
+    left: -13rem;
+    font-size: 20px;
+    font-weight: 700;
+}
