@@ -2,8 +2,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: left;
+    justify-content: flex-start;
     top: 3.5rem;
+    padding-bottom: -2rem;
     background-color: rgb(199, 211, 224);
     width: 32%;
     height: 20%;
@@ -54,6 +55,7 @@
     right: 13.7rem;
     font-size: 15px;
     font-weight: lighter;
+    margin-bottom: 3rem;
 }
 .header-name{
     display: flex;
@@ -63,4 +65,57 @@
     left: -13rem;
     font-size: 20px;
     font-weight: 700;
+}
+.post-content{
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    top:12rem;
+    margin-top: 5rem;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 400;
+    width: 95%;
+    max-height:fit-content;
+    overflow: hidden;
+    overflow-y: scroll;
+    
+}
+.post-content::-webkit-scrollbar {
+    width: 0.5em; /* Set the width of the scrollbar */
+  }
+.new-Post{
+    display:flex;
+    flex-direction: column;
+    margin: 0;
+    margin-top: 0;
+    align-items: flex-start;
+    width: stretch;
+    position: relative;
+    top:1rem;
+    left: -1rem;
+    height:2rem;
+    padding: 1rem;
+    padding-left:4.2rem;
+    list-style: none;
+    border: 1px solid #f6f3f3;
+    
+}
+
+
+.profile-pic-post{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    box-shadow:rgb(252, 251, 251) 0px 0px 2px inset;
+    position: relative;
+
+    top: 4.5rem;
+    border: 4px solid #fcfbfb;
+    outline-style: none;
 }

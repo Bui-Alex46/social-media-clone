@@ -7,5 +7,61 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: top;
+    box-shadow: rgba(94, 94, 108, 1) 0px 7px 29px 0px;
+    background: white;
+    border-radius: 12px;
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    top: 3rem;
+    left: calc(50% - 250px);   
 }
+.input-field{
+    width: stretch;
+    border:none;
+    margin-bottom: 2rem;
+    margin-top:2rem;
+    margin-left: 4rem;
+    padding: 1rem;
+    outline: none;
+    font-size: 20px;
+    
+}
+.input-field:active{
+    outline: none;
+    border:none;
+}
+.profile-pic-modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    box-shadow:rgb(252, 251, 251) 0px 0px 2px inset;
+    position: relative;
+    right: 2rem;
+    top: 2rem;
+    border: 4px solid #fcfbfb;
+    outline-style: none;
+
+}
+.close-button {
+    align-self: flex-start; /* Align the button to the right */
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 28px;
+    padding: 5;
+  }
+  
+  .close-button span {
+    line-height: 1;
+  }
+  
+  .close-button:focus {
+    outline: none;
+  }
