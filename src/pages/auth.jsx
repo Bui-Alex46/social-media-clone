@@ -1,8 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {auth} from '../firebase'
-import { signOut, GoogleAuthProvider, signInWithPopup, signInWithRedirect, onAuthStateChanged, getRedirectResult } from 'firebase/auth';
+import { GoogleAuthProvider, onAuthStateChanged} from 'firebase/auth';
 import './css/auth.css';
-import {GoogleButton} from 'react-google-button';
 import { useNavigate } from 'react-router-dom';
 import SignOutPage from './signout'
 import SignInPage from './signIn'
@@ -28,17 +27,7 @@ const Authentication = () => {
             unsubscribe();
         }
     }, [])
-    
-    // const handleSignOut = () => {
-    //     signOut(auth).then(() => {
-    //         setIsSignedIn(false)
-    //         console.log('logged out')
-    //     }).catch((error) => {
-    //         console.log(error)
-    //     })
-    // }
-    
-    
+
     return( 
     <div className='auth-container'>
        {isSignedIn === false? (

@@ -18,7 +18,7 @@ const SignOutPage = () => {
     return (
         
         <div className = 'auth-container'> 
-        <button type = "button" onClick = {handleSignOut}> logout </button> 
+        <button type = "button" onClick = {handleSignOut}> log out </button> 
         </div>
     )
 }

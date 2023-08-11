@@ -6,7 +6,7 @@
 .modal{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: top;
     box-shadow: rgba(94, 94, 108, 1) 0px 7px 29px 0px;
     background: white;

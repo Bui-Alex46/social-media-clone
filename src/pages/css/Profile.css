@@ -89,12 +89,12 @@
     flex-direction: column;
     margin: 0;
     margin-top: 0;
-    align-items: flex-start;
+    margin-bottom:0;
     width: stretch;
     position: relative;
     top:1rem;
     left: -1rem;
-    height:2rem;
+    height:4rem;
     padding: 1rem;
     padding-left:4.2rem;
     list-style: none;
