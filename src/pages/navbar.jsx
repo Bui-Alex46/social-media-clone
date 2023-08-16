@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
-import { Link} from 'react-router-dom';
+import { Link, useNavigate} from 'react-router-dom';
 import './css/Navbar.css'
 import Modal from 'react-modal'
 import './css/Post.css'
-import {db} from '../firebase'
-import {addDoc, collection} from 'firebase/firestore'
+import {db, auth} from '../firebase'
+import {addDoc, collection, doc} from 'firebase/firestore'
+
 
 
 const Navbar = () => {
@@ -18,14 +19,20 @@ const closeModal = () => {
 }
 
 const [post, setPost] = useState("")
+const navigate = useNavigate();
+const user = auth.currentUser;
 const addPost = async (e) => {
   e.preventDefault();
   try{
-    const docRef = await addDoc(collection(db, "posts"), {
+    const userPostsRef = collection(db,'users',user.uid, 'posts')
+    const docRef = await addDoc(userPostsRef, {
       post: post,
+      timestamp: new Date(),
     });
     console.log("Doc written with ID: ", docRef.id);
     closeModal();
+    navigate('/profile');
+    
   }catch(e){
     console.error("Error adding document: ", e);
   }

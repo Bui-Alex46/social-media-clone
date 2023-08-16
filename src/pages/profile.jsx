@@ -8,12 +8,14 @@ import {db} from '../firebase'
 const Profile = () => {
 
     const [user, setUser] = useState(null);
+    const currentUser = auth.currentUser
     useEffect(() => {
-        const currentUser = auth.currentUser
+        
     setPersistence(auth,browserSessionPersistence).then(() => {
         if (currentUser){
             setUser(currentUser)
             console.log('Persistence set')
+            console.log(currentUser)
     }else{
         console.log('no user')
     }
@@ -23,14 +25,18 @@ const Profile = () => {
 
     const [post, setPost] = useState([])
     const fetchPost = async () => {
-        await getDocs(collection(db, "posts")).then((snapshot) => {
+        if(currentUser){
+            const userPostsRef = collection(db, "users", currentUser.uid, "posts")
+            const snapshot = await getDocs(userPostsRef)
             const newData = snapshot.docs.map((doc) => ({
-                ...doc.data(), id: doc.id
+                ...doc.data(), 
+                id: doc.id
             }));
             setPost(newData)
-            console.log(post,newData)
-        })
-    }
+            console.log(newData)
+        }
+    };
+    
     useEffect(() => {
         fetchPost();
     }, [])
