@@ -47,7 +47,7 @@ const Explore = () => {
     // Function to redirect to user's profile
     const navigate = useNavigate();
     const handleProfileClick = (userId) => {
-      navigate(`/profile/${userId}`);
+      navigate(`/user-profile/${userId}`);
     }
 
     return (

@@ -54,13 +54,11 @@ const Profile = () => {
              {/* Content Section */}
              <ul className = "post-content">
                 {post?.map((post,i)=>(
-                    <>
+                    <li key = {i} className = 'new-Post'>
                     <img alt = "User" className = "profile-pic-post" src = {user.photoURL} />
-                    <li className = "new-Post" key = {i} >{post.post}</li> 
-                    </>
-                             
-                    ))
-                }
+                     {post.post}
+                    </li> 
+                ))}
             </ul>
              
              

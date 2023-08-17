@@ -84,6 +84,24 @@
 .post-content::-webkit-scrollbar {
     width: 0.5em; /* Set the width of the scrollbar */
   }
+.user-post-content{
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    top:14rem;
+    margin-top: 5rem;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 400;
+    width: 95%;
+    max-height:fit-content;
+    overflow: hidden;
+    overflow-y: scroll;
+    
+}
+.user-post-content::-webkit-scrollbar{
+    width: 0.5em;
+}
 .new-Post{
     display:flex;
     flex-direction: column;
@@ -102,7 +120,6 @@
     
 }
 
-
 .profile-pic-post{
     display: flex;
     flex-direction: column;
@@ -114,8 +131,8 @@
     height: 40px;
     box-shadow:rgb(252, 251, 251) 0px 0px 2px inset;
     position: relative;
-
-    top: 4.5rem;
+    right: 3.5rem;
+    top: 1rem;
     border: 4px solid #fcfbfb;
     outline-style: none;
 }

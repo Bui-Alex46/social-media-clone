@@ -12,6 +12,7 @@ import Home from './pages/home';
 import Post from './pages/post';
 import SignOutPage from './pages/signout';
 import SignInPage from './pages/signIn';
+import UserProfileViewer from './pages/userProfileView';
 
 function App() {
   
@@ -28,6 +29,7 @@ function App() {
           <Route exact path = "/auth" element={<Authentication />}></Route>
           <Route exact path = "/signout" element={<SignOutPage />}></Route>
           <Route exact path = "/signIn" element={<SignInPage />}></Route>
+          <Route exact path = "/user-profile/:userId" element={<UserProfileViewer />}></Route>
         </Routes>
         </BrowserRouter>
     

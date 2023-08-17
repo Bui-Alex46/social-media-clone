@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { auth, db } from '../firebase';
-import { GoogleAuthProvider, setPersistence, browserSessionPersistence, signInWithRedirect, onAuthStateChanged } from 'firebase/auth';
+import { GoogleAuthProvider, setPersistence, browserSessionPersistence, signInWithRedirect, onAuthStateChanged} from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
 import { GoogleButton } from 'react-google-button';
 import { doc, setDoc, collection, getDoc } from 'firebase/firestore';
@@ -28,7 +28,7 @@ const SignInPage = () => {
           setUserCreated(true); // Set the flag to prevent redundant user creation
         }
       } catch (error) {
-        console.error(error);
+        console.error("Error creating user", error);
       }
     };
   
@@ -38,8 +38,10 @@ const SignInPage = () => {
           // User is signed in
           createUser(user);
           console.log("user", user);
+          navigate('/home');
         } else {
           // User is signed out
+          console.log("user is signed out")
           // Add any necessary sign-out logic here
         }
       });
@@ -58,24 +60,7 @@ const SignInPage = () => {
       }
     };
   
-    // After the user is redirected back from Google sign-in
-    useEffect(() => {
-      const handleRedirect = async () => {
-        try {
-          const userCredential = await auth.getRedirectResult();
-          const user = userCredential.user;
-  
-          if (user) {
-            createUser(user);
-            navigate('home');
-          }
-        } catch (error) {
-          console.error('Error handling redirect:', error);
-        }
-      };
-  
-      handleRedirect();
-    }, []); // Run once after the component mounts
+    
   
     return (
       <div className="auth-container">
