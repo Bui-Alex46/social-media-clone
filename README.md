@@ -1,10 +1,13 @@
-# Getting Started with Create React App
+# Twitter Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
+## Tools Used
+* `React.js`
+* `HTML`
+* `CSS`
+* `Firebase Firestore`
+* `Firebase Hosting`
+* `Firebase Authentication`
+* `Twitter API` 
 
 ### `npm start`
 
