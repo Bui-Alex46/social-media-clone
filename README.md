@@ -1,5 +1,5 @@
 # Twitter Clone
-A mirrored replication of Twitter! Created a subset of components that make up twitters actual website! Including web layout, UI/UX scheme, and backend processes.  
+A mirrored replication of Twitter! Created a subset of components that make up twitters actual website! Including web layout, UI/UX scheme, and backend features.  
 ## Tools Used
 * `React.js`
 * `HTML`
