@@ -19,4 +19,4 @@ A mirrored replication of Twitter! Created a subset of components that make up t
 * Working with a NoSQL database
 * Cloud Querying 
 
-## You can access the live version of the web app here! [Twitter Clone](`https://social-media-clone-e4f34.web.app/`)
+You can access the live version of the web app here! [Twitter Clone](https://social-media-clone-e4f34.web.app/)
